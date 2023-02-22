@@ -6,6 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import "@fontsource/quicksand";
 import "./index.css";
 import { store } from "./store/store";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: "",
+    children: [{ path: "/", element: "" }],
+  },
+]);
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
@@ -14,6 +23,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
+      <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
 );
