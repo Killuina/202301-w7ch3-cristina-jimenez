@@ -1,19 +1,19 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "@fontsource/quicksand";
 import "./index.css";
 import { store } from "./store/store";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
+import HomePage from "./pages/HomePage/HomePage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [{ path: "/", element: <App /> }],
+    children: [{ path: "/", element: <HomePage /> }],
   },
 ]);
 
