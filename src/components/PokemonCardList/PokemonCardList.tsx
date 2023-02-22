@@ -7,7 +7,7 @@ interface PokemonCardListProps {
 
 const PokemonCardList = ({ pokemons }: PokemonCardListProps): JSX.Element => {
   return (
-    <ul>
+    <ul aria-label="List of Pokemons">
       {pokemons.map((pokemon) => (
         <li key={pokemon.id}>
           <PokemonCard pokemon={pokemon} />
