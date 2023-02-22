@@ -3,7 +3,8 @@ import styled from "styled-components";
 const NavBarStyled = styled.nav`
   display: flex;
   align-items: center;
-  .to-create-button {
+  .link-button {
+    margin: 10px;
     text-decoration: none;
     color: #f06292;
     font-size: 1.2rem;
