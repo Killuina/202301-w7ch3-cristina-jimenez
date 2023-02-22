@@ -7,10 +7,12 @@ describe("Given a pokemonsReducer function", () => {
       const initialState = [] as Pokemons;
       const expectedPokemons: Pokemons = [
         {
+          id: 1,
           name: "pikachu",
           image: "",
         },
         {
+          id: 2,
           name: "ditto",
           image: "",
         },

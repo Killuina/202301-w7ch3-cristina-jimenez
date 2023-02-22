@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const PokemonCardStyled = styled.article`
+  text-transform: capitalize;
   background-color: #f7dc6f;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);

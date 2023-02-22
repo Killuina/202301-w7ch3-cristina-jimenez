@@ -1,11 +1,13 @@
 import { screen } from "@testing-library/react";
 import { render } from "@testing-library/react";
+import { PokemonStructure } from "../../types";
 import PokemonCard from "./PokemonCard";
 
 describe("Given the PokemonCard component", () => {
   describe("when it receives a pokemon with name 'pikachu'", () => {
     test("Then it should show 'pikachu' on a heading", () => {
-      const pokemon = {
+      const pokemon: PokemonStructure = {
+        id: 1,
         name: "pikachu",
         image: "",
       };
