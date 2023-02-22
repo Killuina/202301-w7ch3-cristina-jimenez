@@ -19,6 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "test:coverage": "react-scripts test --coverage --watchAll=false --passWithNoTests",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,5 +47,14 @@
   "devDependencies": {
     "husky": "^8.0.0",
     "lint-staged": "^13.1.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "!src/index.tsx",
+      "!src/react-app-env.d.ts",
+      "!src/setupTests.ts"
+    ]
   }
 }
