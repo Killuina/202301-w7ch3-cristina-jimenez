@@ -4,8 +4,6 @@
 
 body {
   margin: 0;
-  font-family: var(--font-primary);
-  font-size: var(--font-size-paragraph);
 }
 
 ul,
@@ -13,16 +11,6 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-button {
-  font-family: inherit;
-}
-
-h1,
-h2 {
-  margin: 0;
-  font-family: var(--font-secondary);
 }
 
 a,
@@ -36,10 +24,10 @@ button {
   border: none;
   font-size: 12px;
   cursor: pointer;
-  font-size: inherit;
+  font-family: inherit;
   font-weight: inherit;
 }
 
 .app {
-  font-family: "Quicksand";
+  font-family: "Quicksand", sans-serif;
 }
