@@ -7,12 +7,13 @@ const HomePage = (): JSX.Element => {
     {
       id: 1,
       name: "pikachu",
-      image: "",
+      image:
+        "https://d275t8dp8rxb42.cloudfront.net/pokemon/portrait/Pikachu.png",
     },
     {
       id: 2,
       name: "ditto",
-      image: "",
+      image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png",
     },
   ];
 

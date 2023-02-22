@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const HeaderStyled = styled.header`
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   background-color: #f6d9b9;
   padding: 16px;
   h1 {
