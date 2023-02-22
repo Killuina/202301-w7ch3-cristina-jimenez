@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import HeaderStyled from "../Header/HeaderStyled";
 
-const Layout: React.FC = () => {
+const Layout = (): JSX.Element => {
   return (
     <>
       <HeaderStyled>
