@@ -7,12 +7,13 @@ import "@fontsource/quicksand";
 import "./index.css";
 import { store } from "./store/store";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: "",
-    children: [{ path: "/", element: "" }],
+    element: <Layout />,
+    children: [{ path: "/", element: <App /> }],
   },
 ]);
 
@@ -22,7 +23,6 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
       <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
