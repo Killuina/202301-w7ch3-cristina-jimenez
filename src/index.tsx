@@ -8,12 +8,16 @@ import { store } from "./store/store";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./pages/HomePage/HomePage";
+import Create from "./pages/Create/Create";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [{ path: "/", element: <HomePage /> }],
+    children: [
+      { path: "/", element: <HomePage /> },
+      { path: "/create", element: <Create /> },
+    ],
   },
 ]);
 

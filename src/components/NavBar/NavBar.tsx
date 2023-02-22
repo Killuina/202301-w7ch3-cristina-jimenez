@@ -4,13 +4,12 @@ import NavBarStyled from "./NavBarStyled";
 const NavBar = (): JSX.Element => {
   return (
     <NavBarStyled>
-      <ul>
-        <li>
-          <Link to="/create" className="to-create-button">
-            Create
-          </Link>
-        </li>
-      </ul>
+      <Link to="/" className="link-button">
+        Home
+      </Link>
+      <Link to="/create" className="link-button">
+        Create
+      </Link>
     </NavBarStyled>
   );
 };
