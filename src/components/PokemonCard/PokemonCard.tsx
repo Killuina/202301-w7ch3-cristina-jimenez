@@ -11,6 +11,8 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon }) => {
     <PokemonCardStyled className="pokemon-card">
       <h2 className="pokemon-card__name">{pokemon.name}</h2>
       <img
+        width="180"
+        height="180"
         className="pokemon-card__image"
         src={pokemon.image}
         alt={pokemon.name}
