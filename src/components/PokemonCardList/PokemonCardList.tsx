@@ -1,20 +1,11 @@
 import { Pokemons } from "../../types";
 import PokemonCard from "../PokemonCard/PokemonCard";
 
-const PokemonList = (): JSX.Element => {
-  const pokemons: Pokemons = [
-    {
-      id: 1,
-      name: "pikachu",
-      image: "",
-    },
-    {
-      id: 2,
-      name: "ditto",
-      image: "",
-    },
-  ];
+interface PokemonCardListProps {
+  pokemons: Pokemons;
+}
 
+const PokemonCardList = ({ pokemons }: PokemonCardListProps): JSX.Element => {
   return (
     <ul>
       {pokemons.map((pokemon) => (
@@ -26,4 +17,4 @@ const PokemonList = (): JSX.Element => {
   );
 };
 
-export default PokemonList;
+export default PokemonCardList;
