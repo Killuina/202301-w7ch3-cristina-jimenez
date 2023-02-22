@@ -1,14 +1,9 @@
-import PokemonCard from "./components/PokemonCard/PokemonCard";
+import PokemonList from "./components/PokemonList/PokemonList";
 
 const App = (): JSX.Element => {
   return (
     <div className="app">
-      <PokemonCard
-        pokemon={{
-          name: "Pikachu",
-          image: "",
-        }}
-      />
+      <PokemonList />
     </div>
   );
 };

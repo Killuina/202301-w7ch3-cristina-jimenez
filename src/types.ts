@@ -1,4 +1,5 @@
 export interface PokemonStructure {
+  id: number;
   name: string;
   image: string;
 }
